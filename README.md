@@ -45,6 +45,7 @@
 -변경 불가능한 변수 선언할 떄 사용함. 그 외에는 let 과 같은 기능을 수행한다.
 
 ## 문자열
+- 간편하게 사용할 수 있어 개인적으로 중요하다고 생각한다. 
 - 예제로 표현한다.
 <br> let name = 'David';
 <br> let msg = `Welcome ${name}!`;
@@ -69,9 +70,9 @@
 - "Hello" 대신에 배열을 사용하는 것도 가능하다.
 
 ## 함수 선언.
-- 기존에 함수를 선언할 때 function을 붙여야 했다면, 이제는 const를 사용하여 선언한다.
-- 표기 방식에도 변화가 있다. 
-- 디폴트 인자가 사용이 가능하다.
+1. 기존에 함수를 선언할 때 function을 붙여야 했다면, 이제는 const를 사용하여 선언한다.
+2.  표기 방식에도 변화가 있다. 
+3.  디폴트 인자가 사용이 가능하다.
 - ES5 :
 <br> function add(x, y) {
 <br>  var sum = x+y;  
@@ -96,4 +97,67 @@
 <br> const greet = x => "Welcome " + x; // 인자가 하나만 있을 때.
 <br> const x = () => alert("Hi"); // 인자가 없을 때.
 
-## Object
+## Class
+1. 클래스 생성방법
+- class 바로 다음에 이름을 설정한다.
+- constructor로 받을 인자를 설정한다.
+<br> class Rectangle {
+<br>  constructor(height, width) {
+<br>    this.height = height;
+<br>    this.width = width;
+<br>  }
+<br> }
+
+2. 클래스 내부의 매소드 사용
+- 매소드(method) : 객체(오브젝트, object) 내부의 함수.
+- get : 객체 내의 변수에 접근할 때 사용하는 변수 설정자(?)라고 보면 편하다.
+- static : get과 비슷하다. get은 (변수).(함수) 꼴로 선언하지만, static은 (클래스명).(함수)로 선언한다. <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes/static">Mozilla의 설명 참조.</a>
+<br>class Rectangle {
+<br> constructor(height, width) {
+<br>    this.height = height;
+<br>    this.width = width;
+<br>  }
+<br>  get area() { 
+<br>    return this.calcArea();
+<br>  }
+<br>  calcArea() {
+<br>    return this.height * this.width;
+<br>  }
+<br>  ststic sentence() {
+<br>    return 'static method has been called.';
+<br>  }
+<br> }
+<br> const square = new Rectangle(5, 5);
+<br> console.log(square.area);
+<br> console.log(Rectangle.sentence());
+<br> 결과 : 25 "static method has been called."
+
+3. 상속
+- super : 부모의 클래스에서 변수를 사용할 때 사용한다.
+- <a href="https://medium.com/ecmascript-2015/es6-classes-and-inheritance-607804080906">Mediun 참조. </a>
+<br>class Vehicle {
+ 
+<br>  constructor (name, type) {
+<br>   this.name = name;
+<br>    this.type = type;
+<br>  }
+<br>  getName () {
+<br>    return this.name;
+<br>  }
+<br>  getType () {
+<br>    return this.type;
+<br>  }
+<br> }
+<br> class Car extends Vehicle {
+<br>  constructor (name) {
+<br>    super(name, 'car');
+<br>  }
+<br>  getName () {
+<br>    return 'It is a car: ' + super.getName();
+<br>  }
+<br> }
+<br> let car = new Car('Tesla');
+<br> console.log(car.getName()); 
+<br> 결과 : It is a car: Tesla
+<br> console.log(car.getType());
+<br> 결과 : car
