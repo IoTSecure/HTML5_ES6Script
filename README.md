@@ -1,3 +1,6 @@
+## 자세한 것은 <a href="https://www.sololearn.com/Play/JavaScript">SoloLearn-JavaScript</a>, <a href="https://medium.com/ecmascript-2015">Medium</a>, <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript">Mozilla-JavaScript</a> 참조 바랍니다.
+## 의견 추가나 수정은 언제나 환영입니다!
+
 # HTML5 문법
 ##### <> : 태그의 시작을 표시하는 기호. 밑에 나오는 설명들은 다 태그를 붙여야 함.
 ##### </> : 태그의 마지막을 표시하는 기호. 사용하지 않는 태그도 있음.
@@ -17,14 +20,14 @@
 4. style, /style : css 요소를 바로 선언함.
 5. script language = "javascript" type ="text/javascript" (ES6 스크립트) /script : javascript 요소를 사용함.
 6. noscript (문장) /noscript : 사용자가 스크립트 제한을 했을 때 화면에 나타내주는 태그.
-7. base href="(도메인)" target="_blank : <a>태그가 비었을 때 기본으로 사용하는 태그.
+7. base href="(도메인)" target="_blank : a 태그가 비었을 때 기본으로 사용하는 태그.
 
 ## body, /body
 ### - 홈페이지에 보여질 것들을 설정할 때 샤용.
 
 ### - 대표적으로 들어가는 요소들 (중요!)
 1. div class="(설명)" (제목) /div : 컴퓨터의 폴더라고 생각하면 편함. 제목이 홈페이지에 보임.
-2. ***h1, /h1, ... , h6, /h6 : 글자의 크기를 표현. 숫자가 높을 수록 크기가 작음.
+2. ***h1, /h1, ... , h6, /h6 : 글자의 크기를 표현. 숫자가 높을 수록 크기가 작음. README.md의 #과 동일함.
 3. ***hr : 줄바꿈.
 4. ***p, /p : 문장을 표시함.
 5. a href="(도메인)" (문장) /a : 하이퍼링크. p 태그 내부에 선언할 수 있음.
@@ -59,17 +62,23 @@
 <br> for (let v in obj) {
 <br>     console.log(v);
 <br> }
-<br> 결과 : a b c
+<br> 결과 : a
+<br>          b
+<br>          c
 - key값을 반환하지, value값을 반환하지 않는다. 또한, 엔진에 따라 거꾸로 계산할 수 있어 잘 사용하지 않는다.
 
 2. for .. of : 이게 파이썬의 for문과 비슷하다.
 <br> for (let ch of "Hello") {
 <br>    console.log(ch);
 <br> }
-<br> 결과 : H e l l o
+<br> 결과 : H
+<br>          e
+<br>          l
+<br>          l
+<br>          o
 - "Hello" 대신에 배열을 사용하는 것도 가능하다.
 
-## 함수 선언.
+## 함수 선언
 1. 기존에 함수를 선언할 때 function을 붙여야 했다면, 이제는 const를 사용하여 선언한다.
 2.  표기 방식에도 변화가 있다. 
 3.  디폴트 인자가 사용이 가능하다.
@@ -82,6 +91,7 @@
 <br> arr.forEach(function(el) {
 <br>  console.log(el * 2);
 <br> });
+<br> 결과 : 4 6 14 16
 
 - ES6 :
 <br> const add = (x, y) => {
@@ -92,6 +102,7 @@
 <br> arr.forEach(v => {
 <br>  console.log(v * 2);
 <br> });
+<br> 결과 : 4 6 14 16
 
 - ES6 함수 중 인자가 하나만 있거나 없을 때 :
 <br> const greet = x => "Welcome " + x; // 인자가 하나만 있을 때.
@@ -111,7 +122,7 @@
 2. 클래스 내부의 매소드 사용
 - 매소드(method) : 객체(오브젝트, object) 내부의 함수.
 - get : 객체 내의 변수에 접근할 때 사용하는 변수 설정자(?)라고 보면 편하다.
-- static : get과 비슷하다. get은 (변수).(함수) 꼴로 선언하지만, static은 (클래스명).(함수)로 선언한다. <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes/static">Mozilla의 설명 참조.</a>
+- static : get과 비슷하다. get은 (변수).(함수) 꼴로 선언하지만, static은 (클래스명).(함수)로 선언한다. <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes/static">Mozilla.</a>의 설명 참조.
 <br>class Rectangle {
 <br> constructor(height, width) {
 <br>    this.height = height;
@@ -130,13 +141,13 @@
 <br> const square = new Rectangle(5, 5);
 <br> console.log(square.area);
 <br> console.log(Rectangle.sentence());
-<br> 결과 : 25 "static method has been called."
+<br> 결과 : 25 
+<br>          "static method has been called."
 
 3. 상속
 - super : 부모의 클래스에서 변수를 사용할 때 사용한다.
-- <a href="https://medium.com/ecmascript-2015/es6-classes-and-inheritance-607804080906">Mediun 참조. </a>
-<br>class Vehicle {
- 
+- 자세한 설명은 <a href="https://medium.com/ecmascript-2015/es6-classes-and-inheritance-607804080906">Medium</a> 참조.
+<br> class Vehicle {
 <br>  constructor (name, type) {
 <br>   this.name = name;
 <br>    this.type = type;
@@ -158,6 +169,45 @@
 <br> }
 <br> let car = new Car('Tesla');
 <br> console.log(car.getName()); 
-<br> 결과 : It is a car: Tesla
 <br> console.log(car.getType());
-<br> 결과 : car
+<br> 결과 : It is a car: Tesla
+<br>          car
+
+
+## Promise
+- 조금 까다롭다.
+- 간단히 표현하면, 참과 거짓을 이용해 함수를 간단히 표현하는 것이다.
+<br>function asyncFunc(work) {
+<br>  return new Promise(function(resolve, reject) {
+<br>    if (work === "")
+<br>      reject(Error("Nothing"));
+<br>    setTimeout(function() {
+<br>      resolve(work);
+<br>    }, 1000);
+<br>  });
+<br> }
+<br> asyncFunc("Work 1") // Task 1
+<br>.then(function(result) {
+<br>  console.log(result);
+<br>  return asyncFunc("Work 2"); // Task 2
+<br> }, function(error) {
+<br>   console.log(error);
+<br> })
+<br> .then(function(result) {
+<br>  console.log(result);
+<br> }, function(error) {
+<br>  console.log(error);
+<br> });
+<br> console.log("End");
+<br> 결과 : End 
+<br>          Work 1
+<br>          Work 2
+
+## Module - 우린 React를 사용합니다!
+- <a href="https://dojang.io/mod/page/view.php?id=2441">파이썬에서의 import</a>와 비슷하고, <a href="https://dojang.io/mod/page/view.php?id=802">C에서의 extern</a>과 비슷하다.
+<br> // lib/math.js
+<br> export let sum = (x, y) => { return x + y; }
+<br> export let pi = 3.14;
+<br> // app.js
+<br> import * as math from "lib/math"
+<br> console.log(`2p = + ${math.sum(math.pi, math.pi)}`)
