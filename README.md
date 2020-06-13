@@ -69,8 +69,8 @@
 <br>     console.log(v);
 <br> }
 <br> 결과 : a
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp ;b
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp ;c
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; b
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c
 - key값을 반환하지, value값을 반환하지 않는다. 또한, 엔진에 따라 거꾸로 계산할 수 있어 잘 사용하지 않는다.
 
 2. for .. of : 이게 파이썬의 for문과 비슷하다.
