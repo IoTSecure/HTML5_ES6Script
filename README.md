@@ -69,8 +69,8 @@
 <br>     console.log(v);
 <br> }
 <br> 결과 : a
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp ;b
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp ;c
 - key값을 반환하지, value값을 반환하지 않는다. 또한, 엔진에 따라 거꾸로 계산할 수 있어 잘 사용하지 않는다.
 
 2. for .. of : 이게 파이썬의 for문과 비슷하다.
@@ -78,10 +78,10 @@
 <br>    console.log(ch);
 <br> }
 <br> 결과 : H
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;e
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;l
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;l
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;o
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; e
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; l
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; l
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o
 - "Hello" 대신에 배열을 사용하는 것도 가능하다.
 
 ## 함수 선언
@@ -98,9 +98,9 @@
 <br>  console.log(el * 2);
 <br> });
 <br> 결과 : 4
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;14
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;16
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 6
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 14
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 16
 
 - ES6 :
 <br> const add = (x, y) => {
@@ -112,9 +112,9 @@
 <br>  console.log(v * 2);
 <br> });
 <br> 결과 : 4
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;14
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;16
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 6
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 14
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 16
 
 - ES6 함수 중 인자가 하나만 있거나 없을 때 :
 <br> const greet = x => "Welcome " + x; // 인자가 하나만 있을 때.
@@ -154,7 +154,7 @@
 <br> console.log(square.area);
 <br> console.log(Rectangle.sentence());
 <br> 결과 : 25 
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"static method has been called."
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "static method has been called."
 
 3. 상속
 - super : 부모의 클래스에서 변수를 사용할 때 사용한다.
@@ -183,7 +183,7 @@
 <br> console.log(car.getName()); 
 <br> console.log(car.getType());
 <br> 결과 : It is a car: Tesla
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;car
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; car
 
 
 ## Promise
@@ -212,8 +212,8 @@
 <br> });
 <br> console.log("End");
 <br> 결과 : End 
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Work 1
-<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Work 2
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Work 1
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Work 2
 
 ## Module - 우린 React를 사용합니다!
 - <a href="https://dojang.io/mod/page/view.php?id=2441">파이썬에서의 import</a>와 비슷하고, <a href="https://dojang.io/mod/page/view.php?id=802">C에서의 extern</a>과 비슷하다.
