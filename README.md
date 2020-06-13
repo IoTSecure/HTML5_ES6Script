@@ -77,7 +77,6 @@
 <br>  var sum = x+y;  
 <br>  console.log(sum);
 <br> }
-
 <br> var arr = [2, 3, 7, 8];
 <br> arr.forEach(function(el) {
 <br>  console.log(el * 2);
@@ -88,7 +87,6 @@
 <br>  let sum = x + y;  
 <br>  console.log(sum);
 <br> }
-
 <br> const arr = [2, 3, 7, 8];
 <br> arr.forEach(v => {
 <br>  console.log(v * 2);
