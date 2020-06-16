@@ -23,7 +23,7 @@
 2. &lt;title&gt; &lt;/title&gt; : 탭에 뜨는 페이지 이름을 설정함.
 3. &lt;link&gt; &lt;/link&gt; : css 요소를 불러옴.
 4. &lt;style&gt; &lt;/style&gt; : css 요소를 바로 선언함.
-5. &lt;script language = "javascript" type ="text/javascript" (ES6 스크립트) /script&gt; : javascript 요소를 사용함.
+5. &lt;script language = "javascript" type ="text/javascript" (ES6 스크립트) &lt;/script&gt; : javascript 요소를 사용함.
 6. &lt;noscript&gt; (문장) &lt;/noscript&gt; : 사용자가 스크립트 제한을 했을 때 화면에 나타내주는 태그.
 7. &lt;base href="(도메인)" target="_blank&gt; : a 태그가 비었을 때 기본으로 사용하는 태그.
 
