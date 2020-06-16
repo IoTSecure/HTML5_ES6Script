@@ -27,7 +27,7 @@
 6. &lt;noscript&gt; (문장) &lt;/noscript&gt; : 사용자가 스크립트 제한을 했을 때 화면에 나타내주는 태그.
 7. &lt;base href="(도메인)" target="_blank&gt; : a 태그가 비었을 때 기본으로 사용하는 태그.
 
-## &lt;body&gt;, &lt;/body&lt;
+## &lt;body&gt;, &lt;/body&gt;
 ### - 홈페이지에 보여질 것들을 설정할 때 샤용.
 
 ### - 대표적으로 들어가는 요소들 (중요!)
@@ -134,7 +134,7 @@
 2. 클래스 내부의 매소드 사용
 - 매소드(method) : 객체(오브젝트, object) 내부의 함수.
 - get : 객체 내의 변수에 접근할 때 사용하는 변수 설정자(?)라고 보면 편하다.
-- static : get과 비슷하다. get은 (변수).(함수) 꼴로 선언하지만, static은 (클래스명).(함수)로 선언한다. <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes/static">Mozilla.</a>의 설명 참조.
+- static : get과 비슷하다. get은 (변수).(함수) 꼴로 선언하지만, static은 (클래스명).(함수)로 선언한다. <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes/static">Mozilla</a>의 설명 참조.
 <br>class Rectangle {
 <br> constructor(height, width) {
 <br>    this.height = height;
